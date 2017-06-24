@@ -10,7 +10,7 @@ meta: Fikri Ghazi personal website, showing off work and ideas
   <h2><i>Projects on...</i></h2>
   <ol>
     {% for project in site.data.projects %}
-      <h3><li><a href="{{site.baseurl}}/projects/{{project.folder}}/">
+      <h3><li><a href="{{site.baseurl}}{{project.url}}/projects/{{project.folder}}/">
         {{ project.type }}
       </a></li></h3>
     {% endfor %}
@@ -41,7 +41,7 @@ meta: Fikri Ghazi personal website, showing off work and ideas
   <div style="background-color: pink;">
   	<div>
   		<span>{{ post.date | date: '%B %d, %Y' }}</span>
-  		<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+  		<a href="{{site.baseurl}}{{ post.url }}"><h3>{{ post.title }}</h3></a>
   	  <span>{{ post.excerpt }} <!-- first par from content --></span>
   		<ul class="inline-list" style="margin-top:-1em;">
   			{% for category in post.categories %}

@@ -4,4 +4,5 @@ twitter_uname: fik7ri
 instagram_uname: f7_______g
 github_uname: f7g
 
+baseurl: /jekyllin
 exclude: ['README.md']

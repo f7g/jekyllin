@@ -1,0 +1,9 @@
+# Project types
+- type: Web Application
+  folder: web-application
+
+- type: Graphic Design
+  folder: graphic-design
+
+- type: Music
+  folder: music

@@ -1,0 +1,16 @@
+<nav>
+  <ul>
+    <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}class_name_for_current_page{% endif %}">
+      Home
+    </a></li>
+    <li><a href="{{site.baseurl}}/projects/" class="{% if page.url contains 'projects' %}class_name_for_current_page{% endif %}">
+      Projects
+    </a></li>
+    <li><a href="{{site.baseurl}}/about" class="{% if page.url contains 'about' %}class_name_for_current_page{% endif %}">
+      About
+    </a></li>
+    <li><a href="{{site.baseurl}}/contact" class="{% if page.url contains 'contact' %}class_name_for_current_page{% endif %}">
+      Contact
+    </a></li>
+  </ul>
+</nav>

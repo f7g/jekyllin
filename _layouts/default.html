@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} · {% endif %}{{ site.title }}{% if page.titleAfter %} · {{page.titleAfter}}{% endif %}</title>
+  <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet">
+<meta name="description" content="{{page.meta}}">
+</head>
+<body>
+
+
+  <header>
+    <!-- logo -->
+    <h1>Logo</h1>
+    <!-- navigation -->
+    {% include nav.html %}
+  </header>
+
+  {{content}}
+
+  <footer>
+    <!-- logo + copyright -->
+    <h1>Logo</h1>
+    <span>&copy; 2017 Fikri Ghazi</span>
+    <!-- nav -->
+    {% include nav.html %}
+    <!-- social media -->
+    <nav>
+      <ul>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">instagram</a></li>
+        <li><a href="#">github</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+
+</body>
+</html>

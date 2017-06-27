@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}} · {% endif %}{{ site.title }}{% if page.titleAfter %} · {{page.titleAfter}}{% endif %}</title>
-  <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/assets/stylesheets/main.css" rel="stylesheet">
   <meta name="description" content="{{page.meta}}">
 </head>
 <body>
@@ -20,7 +20,7 @@
   <footer>
     <!-- logo + copyright -->
     <h1>Logo</h1>
-    <span>&copy; 2017 Fikri Ghazi</span>
+    <span>&copy; 2017 {{site.name}}</span>
     <!-- nav -->
     {% include nav.html %}
     <!-- social media -->
